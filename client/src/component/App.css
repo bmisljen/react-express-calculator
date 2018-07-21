@@ -1,0 +1,18 @@
+.component-app {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 90%;
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 10%;
+  color: white;
+}
+
+.App-title {
+  font-size: 0.5em;
+}

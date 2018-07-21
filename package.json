@@ -1,0 +1,31 @@
+{
+  "name": "react_spa_calculator",
+  "version": "1.0.0",
+  "description": "Example calculator made with Nodejs, Express and React",
+  "author": {
+    "name": "Boris Misljencevic",
+    "email": "bmisljen@gmail.com",
+    "url": "https://www.boriswebappdevelopment.ca"
+  },
+  "license": "MIT",
+  "scripts": {
+    "client": "cd client && yarn start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
+    "dev:server": "cd client && yarn build && cd .. && yarn start",
+    "start": "node server.js",
+    "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "concurrently": "^3.6.0"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "calculator",
+    "react"
+  ]
+}
